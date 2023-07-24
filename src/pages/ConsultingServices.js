@@ -17,7 +17,7 @@ import PricingTwo from '../elements/pricing/PricingTwo';
 import CalltoActionFive from '../elements/calltoaction/CalltoActionFive';
 
 
-const Corporate = () => {
+const ConsultingServices = () => {
     return (
         <>
             <SEO title="Corporate" />
@@ -153,4 +153,4 @@ const Corporate = () => {
     )
 }
 
-export default Corporate
+export default ConsultingServices

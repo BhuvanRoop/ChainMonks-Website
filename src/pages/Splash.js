@@ -25,7 +25,7 @@ const Demo = [
         badge: "",
     },
     {
-        Url : "/corporate",
+        Url : "/consulting-&-services",
         Image: "./images/demo/corporate.png" ,
         Imagelight: "./images/demo/corporate-light.png" ,
         Title: "Corporate",
@@ -67,10 +67,10 @@ const Demo = [
         badge: "",
     },
     {
-        Url : "/digital-agency",
+        Url : "/government",
         Image: "./images/demo/digital-agency.png" ,
         Imagelight: "./images/demo/digital-agency-light.png" ,
-        Title: "Digital Agency",
+        Title: "Government",
         badge: "",
     },
     {

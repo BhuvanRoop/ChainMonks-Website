@@ -6,34 +6,80 @@
 font-family: 'Inter', sans-serif;
 */
 
-// .govt-banner{
-//     @media #{$laptop-device} {
-//         transform: translate(0%,-100%);
-//     }
-
-//     @media #{$lg-layout} {
-//         transform: translate(0%,-100%);
-
-//     }
-
-//     @media #{$md-layout} {
-//         transform: translate(0%,-30%);
-//     }
-
-//     @media #{$sm-layout} {
-//         transform: translate(0%,-15%);
-
-//     }
-// }
-
+.containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .boxes {
+    background-color: #f0f0f0;
+    height: 120px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .containers-1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .boxes-1 {
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    width: 70%;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .boxes span{
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    margin: 10px;
+  }
+  @media (min-width:760px){
+    .boxes-1{
+        text-align: left;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .containers {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
 
 
 .row {
-    justify-content: space-between;
+    justify-content: center;
     margin-right: -15px;
     margin-left: -15px;
 }
+.row-footer {
+    margin-right: -15px;
+    margin-left: -15px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
 .foot-logo{
     margin-top: -12px;
 }
@@ -77,6 +123,45 @@ font-family: 'Inter', sans-serif;
     margin-bottom: -10px;
 }
 
+.prod-card{
+    background: #f5f8fa !important;
+    box-sizing: border-box; 
+    box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.65s;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+.prod-card:hover{
+    transform: translateY(-5px);
+    transition: all ease 1s;
+    box-shadow: 1px 8px 20px rgba(87, 147, 206, .5);
+    -webkit-transition: box-shadow .25s ease-in;
+}
+@media(min-width:771px){
+    .prod-card{
+        width: 70%;
+    }
+}
+@media(max-width:770px){
+    .prod-card{
+        width: 100%;
+    }
+}
+@media(min-width:680px){
+    .form{
+    width: 50%;
+    }
+}
+@media(max-width:680px){
+    .form{
+    width:90%;
+    }
+}
 
 /*===============================
     Background Color 

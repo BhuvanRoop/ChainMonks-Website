@@ -61,3 +61,11 @@ const TimelineTwo = ({classVar}) => {
     )
 }
 export default TimelineTwo;
+
+
+
+                    //  <div className={`col-lg-3 col-md-3 rn-timeline-single `} >
+                    //     <div className="content">
+                    //         <h4 className="title w-600">Platform Features</h4>
+                    //     </div>
+                    // </div> 

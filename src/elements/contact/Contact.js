@@ -16,7 +16,7 @@ const Contact = () => {
                     title="Contact Info"                
                                        
                 />
-                <div className="row row--15">
+            <div className="row row--15">
                 <div className="col-lg-12">
                     <div className="rn-contact-address mt_dec--30">
                         <div className="row">

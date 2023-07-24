@@ -32,10 +32,6 @@ const TeamThree = ({column , teamStyle}) => {
         <div className="row row--30">
             {teamData.map((data, index) => (
                 <div className={`${column}`} key={index}>
-                    <ScrollAnimation 
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}>
                         <div className={`rn-team ${teamStyle}`}>
                             <div className="inner">
                                 <figure className="thumbnail">
@@ -47,7 +43,6 @@ const TeamThree = ({column , teamStyle}) => {
                                 </figcaption>
                             </div>
                         </div>
-                    </ScrollAnimation>
                 </div>
             ))}
         </div>

@@ -17,8 +17,6 @@
 .select-box{
     display: flex;
     flex-direction: column;
-
-
 }
 .select-box .options-container{
     color: #2f3640;
@@ -28,7 +26,8 @@
     opacity: 0;
     border-radius: 15px;
     transition: all 0.4s;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     order: 1;
     margin-bottom: 15px;
 
@@ -41,8 +40,12 @@
     max-height: 250px;
     opacity: 1;
 }
+.select-box .options-container.active3{
+    max-height: 250px;
+    opacity: 1;
+}
 .select-box .option,
-.selected1,.selected2{
+.selected1,.selected2,.selected3{
     padding: 5px 24px;
     cursor: pointer;
     order: 0;
@@ -58,16 +61,16 @@
 .select-box .option{
     height: 35px;
 }
-.selectedd1,.selectedd2{
+.selectedd1,.selectedd2,.selectedd3{
     margin-top: 5px;
 }
-.selected1,.selected2{
+.selected1,.selected2,.selected3{
     background: none;
     border:2px solid rgba(0, 0, 0, 0.1411764706);
     border-radius: var(--radius);
 
 }
-.selected1 .arrow,.selected2 .arrow {
+.selected1 .arrow,.selected2 .arrow,.selected3 .arrow{
     position: absolute;
     width: 18px;
     right: 10px;
@@ -80,8 +83,8 @@
     top: -6px;
 }
 .select-box .option:hover{
-    background: #ced0d3;
-    color:#1cb9e9;
+    background: rgb(61, 61, 176);
+    color:whitesmoke;
 }
 .select-box label{
     cursor: pointer;

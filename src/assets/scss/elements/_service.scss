@@ -1,6 +1,19 @@
 /*--------------------
     Service Styles  
 ----------------------*/
+@media (min-width:1200px){
+    .featuers{
+        height: 300px;
+    }
+}
+@media (min-width:9920px){
+    .featuers{
+        height: 500px;
+    }
+}
+
+
+
 .service {
     &.service__style--1 {
         padding: 50px 35px;

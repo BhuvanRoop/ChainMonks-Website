@@ -1,6 +1,202 @@
 /*-------------------------
     Darkmode Styles  
 ---------------------------*/
+.load-box {
+    width: 100%;
+    margin-top: 25px; 
+    background: #f5f8fa !important;
+    padding: 20px;
+    box-sizing: border-box; 
+    border-radius: var(--radius);
+    box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.65s;
+  }
+@media (max-width:576px){
+    .platform-feat{
+        display: flex;
+        flex-direction:column;
+    }
+    .feat-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width:576px){
+    .platform-feat{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:576px){
+    .test{
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+@media (min-width:576px){
+    .test{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:1600px) {
+    .box{
+        height: 250px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:1200px) and (max-width:1600px){
+    .box{
+        height: 320px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:1010px) and (max-width:1200px){
+    .box{
+        height: 370px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:900px) and (max-width:1010px){
+    .box{
+        height: 440px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:800px) and (max-width:900px){
+    .box{
+        height: 500px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:670px) and (max-width:800px){
+    .box{
+        height: 600px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:576px) and (max-width:670px){
+    .box{
+        height: 720px;
+        position: relative;
+    }
+    .test-name{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width:1200px){
+    .features{
+        height: 300px;
+    }
+}
+@media (max-width:1200px) and (min-width:920px){
+    .features{
+        height: 400px;
+    }
+}
+@media (max-width:920px) and (min-width:770px){
+    .features{
+        height: 300px;
+    }
+}
+@media (max-width:770px) and (min-width:576px){
+    .features{
+        height: 380px;
+    }
+}
+
+.features{
+    transition: all 0.5s;
+    box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.1);
+
+}
+.features:hover{
+    transition: all ease 1s;
+    box-shadow: 1px 8px 20px rgba(87, 147, 206, .5);
+    -webkit-transition: box-shadow .25s ease-in;
+}
+
+.box {
+    width: 100%;
+    margin-top: 25px; 
+    background: #f5f8fa !important;
+    padding: 20px;
+    box-sizing: border-box; 
+    border-radius: var(--radius);
+    box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.65s;
+  }
+  .box:hover{
+    transform: translateY(-5px);
+    transition: all ease 1s;
+    box-shadow: 1px 8px 20px rgba(87, 147, 206, .5);
+    -webkit-transition: box-shadow .25s ease-in;
+
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;    
+    background: #f5f8fa !important;
+    padding: 20px;
+    box-sizing: border-box; 
+    // border-radius: var(--radius);
+    // transition: all 0.65s;
+  }
+
+
+
+
+
+
 .rn-back-top svg {
     transition: 0.3s;
 }
@@ -325,7 +521,7 @@ body.light .brand-style-1 li {
 }
 
 body.light hr {
-    border-top: 1px solid #00000024;
+    border-top: 3px solid #000000e2;
 }
 
 body.light .rn-card {

@@ -94,10 +94,7 @@ const TeamFour = ({column , teamStyle}) => {
         <div className="row row--15">
             {teamData.map((data, index) => (
                 <div className={`${column}`} key={index}>
-                    <ScrollAnimation 
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}>
+                    
                         <div className={`rn-team ${teamStyle} `}>
                             <div className="inner">
                                 <a  href={`${data.link}`} target='_blank' style={{height:'100%',position:'relative'}}>
@@ -118,8 +115,6 @@ const TeamFour = ({column , teamStyle}) => {
                                 <p className='subtitle theme-gradient'>{data.designation}</p>
                             </div>
                         </div>
-                       
-                    </ScrollAnimation>
                 </div>
             ))}
         </div>
